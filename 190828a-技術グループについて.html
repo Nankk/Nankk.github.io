@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-08-28 水 18:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>技術グループについて</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Nankk" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">技術グループについて</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgb8d732a">1. 技術グループについて</a>
+<ul>
+<li><a href="#orge2f4659">1.1. 概要</a></li>
+<li><a href="#org735d3e5">1.2. 活動内容</a></li>
+<li><a href="#orgb2d87f7">1.3. 進行中のプロジェクト</a>
+<ul>
+<li><a href="#org0561633">1.3.1. 進行用スライドの実装</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb8d732a" class="outline-2">
+<h2 id="orgb8d732a"><span class="section-number-2">1</span> 技術グループについて</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orge2f4659" class="outline-3">
+<h3 id="orge2f4659"><span class="section-number-3">1.1</span> 概要</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+TRPGセッションをVRChat上で行うためのセットアップする際に、当初想定していなかった種々の問題が生じたことから個人での対応が困難となったため、Qボドゲ部情報強者の方々に縋るようにして作られたグループです。
+</p>
+</div>
+</div>
+<div id="outline-container-org735d3e5" class="outline-3">
+<h3 id="org735d3e5"><span class="section-number-3">1.2</span> 活動内容</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+技術的に解決すべき課題が生じたときに随時その対応をすることが主な活動内容です。
+割り振りは適当で、タスクはその場その場でやりたい人が引き受けたり、もしくは適当だと思われる人に依頼したりしてます。
+</p>
+</div>
+</div>
+<div id="outline-container-orgb2d87f7" class="outline-3">
+<h3 id="orgb2d87f7"><span class="section-number-3">1.3</span> 進行中のプロジェクト</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+以下は現在取り組んでいる課題とそれに対する試みのまとめです。
+</p>
+</div>
+<div id="outline-container-org0561633" class="outline-4">
+<h4 id="org0561633"><span class="section-number-4">1.3.1</span> 進行用スライドの実装</h4>
+<div class="outline-text-4" id="text-1-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org7669722"></a>したいこと<br />
+<div class="outline-text-5" id="text-1-3-1-1">
+<p>
+ボドゲ会本会（普段のオフラインの集まりをこう呼ぶことにします）で用いられるような資料表示用のスクリーンをVR空間内に配置し、進行役が任意のタイミングで任意の画像を映せるようにすることを目標とします。
+</p>
+</div>
+</li>
+<li><a id="org37fe23b"></a>考えられる実装手段<br />
+<div class="outline-text-5" id="text-1-3-1-2">
+<p>
+スクリーンを設置して利用するためには、VRChatの仕様に沿った <b>ワールド</b> を作成し、その中にスクリーンの役割を担うオブジェクトを配置する必要があります。
+</p>
+
+<p>
+ワールド作成には3Dゲームエンジン「Unity」を使用します（VRChat指定のバージョンでないと正常に動作しないので注意）。
+Unityで画像切り替えのようなギミックを実現する場合、通常はC#などのスクリプトを用いてオブジェクトの振る舞いを記述しますが、VRChatではセキュリティ状の理由から <b>ユーザのカスタムスクリプトの動作を禁止する</b> という <del>クソみたいな</del> 仕様があります。
+</p>
+
+<p>
+そのため、VRChat対応のギミックを作る際はVRChat公式により提供されたSDKを用い、限られたリソースを組み合わせながら工夫して作成する必要があります。
+</p>
+
+<p>
+スクリーンの実装に利用できそうなSDK部品には以下のようなものがあります。
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org4870bb4"></a><del>VRC<sub>WebPanel</sub></del><br />
+<div class="outline-text-6" id="text-1-3-1-2-1">
+<ul class="org-ul">
+<li>VRChatワールド内に外界の画像を持ち込むための最も有力な手段</li>
+<li>…だったが脆弱性が見つかり2018年に死亡</li>
+<li>未だ復活の見通し立たず</li>
+</ul>
+</div>
+</li>
+<li><a id="orgad78227"></a>VRC<sub>Panorama</sub><br />
+<div class="outline-text-6" id="text-1-3-1-2-2">
+<ul class="org-ul">
+<li>指定したURLの画像を表示するオブジェクト</li>
+<li>URLの指定はワールド編集時にしか行えないため実行時の動的な画像指定が困難
+<ul class="org-ul">
+<li>応答が動的に変わるURL（phpなど）を指定し、外部からAPIを通じて制御を行うのが旬</li>
+</ul></li>
+<li>不可軽減のためと思われるが、キャッシュを死ぬまで離さないので一工夫必要</li>
+</ul>
+</div>
+</li>
+<li><a id="org8e24895"></a>VRC<sub>SyncVideoStream</sub><br />
+<div class="outline-text-6" id="text-1-3-1-2-3">
+<ul class="org-ul">
+<li>外部のストリーミング配信を移すことのできるオブジェクト</li>
+<li>遅延および解像度、参加者の回線速度等について要アセス</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org3ad7250"></a>現時点でのソリューション<br />
+<div class="outline-text-5" id="text-1-3-1-3">
+<p>
+これまでに色々と試したことについて以下に簡単にまとめます。
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org96ab5fa"></a>VRC<sub>Panorama</sub><br />
+<div class="outline-text-6" id="text-1-3-1-3-1">
+<p>
+VRC<sub>Panoramaに任意の画像を表示するような柔軟性を持たせるためには</sub>、参照させるURLを一意に定め、URLが返す画像を任意のタイミングで変更させる仕組みをもたせる必要があります。
+そこで現在「Heroku」上に<a href="https://vrcpanorama-get-image.herokuapp.com/index.php">スクリプト</a>を配置し、クエリ文字列を指定することで画像の切り替えを行えるようにしています。
+</p>
+
+<p>
+以下ではこの仕組みを利用しつつ、キャッシュをうまく回避して画像更新を行う方法を模索しています。
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org780adc5"></a>NextPano()による変更通知<br />
+<div class="outline-text-7" id="text-1-3-1-3-1-1">
+<p>
+キャッシュを手放さないVRC<sub>Panoramaに十分なサイズのキャッシュ配列を持たせ</sub>、全ての要素が埋まるまで強制的に新規読み込みをさせる方法です。ただし、キャッシュ配列が埋まった段階で画像更新ができなくなるという難点があります。
+ユーザはワールド内に配置されたスイッチを押すことでこのイベントを発火させることができます。
+</p>
+
+<p>
+次のキャッシュ要素に進めるためにはVRC<sub>PanoramaクラスのNextPano</sub>()メソッドのコールが必要となりますが、通常の方法ではUnityから同メソッドにアクセスすることができないため、 <b>Animation</b> および <b>AnimatorController</b> オブジェクトを介するテクニックを使用して無理矢理コールします。
+詳細は別資料に譲りますが、VRChatでは頻出のテクニックです。
+</p>
+
+<p>
+現時点ではこの方法が比較的安定して動作しています（ユーザ間で反映タイミングのばらつきはあり）。
+</p>
+</div>
+</li>
+<li><a id="orgf87e6f4"></a>破壊&amp;再生成（スイッチ）<br />
+<div class="outline-text-7" id="text-1-3-1-3-1-2">
+<p>
+そんなにキャッシュを手放したくないのならば死ね！（過激派） ということでVRC<sub>Panoramaをキャッシュごと破壊し</sub>、新たなVRC<sub>Panoramaに新規読み込みを託す方法です</sub>（生成段階ではキャッシュを持たないため必ずデータを取りに行く）。
+</p>
+
+<p>
+何がしかの理由により後から入ったユーザから見える画面が乱れる現象が発生し、期日までに修正できなかったため一旦保留としています。
+ちなみに2人目のみ鏡を通すと正常な画面を見ることができるという謎現象が確認されています（3人目からは直視・鏡のいずれでも表示が乱れる）。
+</p>
+
+<p>
+メモ：DestroyObjectがユーザ間で上手く同期されず複数スライドが重なって表示されていた？ObjectSyncを実装していなかった気がするのでそのせいかも
+</p>
+</div>
+</li>
+<li><a id="org64106aa"></a>破壊&amp;再生成（タイマー）<br />
+<div class="outline-text-7" id="text-1-3-1-3-1-3">
+<p>
+VRC<sub>Panoramaインスタンスにタイマーを持たせ</sub>、自身の破壊と生成を再帰的かつ自動的に行っていく方法です。
+破壊&amp;再生成の際に生じる読み込みラグにより画面が点滅するため、描画用のパネルを2枚用意しそれらを交互に表示することでちらつきを抑制します（OpenGLでいうSwapBuffers()のイメージ）。
+</p>
+
+<p>
+VRC<sub>Panoramaを抹殺することでキャッシュも破壊されるはずでしたが</sub>、死んだVRC<sub>Panoramaのキャッシュに対し何故かGCが働かず</sub>、溜まったゴミがPCのリソースを看過できないレベルで圧迫したので実戦投入は危険と判断されました。回避策を検討中です。
+</p>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org4d4bafe"></a>VRC<sub>SyncVideoStream</sub>（進行中）<br />
+<ol class="org-ol">
+<li><a id="orga605c86"></a>via Twitch配信<br />
+<div class="outline-text-7" id="text-1-3-1-3-2-1">
+<p>
+スライドに映したい内容をTwitchで配信し、それをVRC<sub>SyncVideoStreamで映し出す方法です</sub>。
+Twitchへの反映7秒、その後VRChatが読み込むまでのラグを足して30秒ほどの遅延が生じたため実戦投入は厳しいと判断されました。
+</p>
+</div>
+</li>
+<li><a id="org5830e54"></a>via 独自サーバ？<br />
+<div class="outline-text-7" id="text-1-3-1-3-2-2">
+<p>
+Twitchがダメなら自作してしまえ！な方法。現在進行中。
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Nankk</p>
+<p class="date">Created: 2019-08-28 水 18:18</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
