@@ -18,8 +18,8 @@ qsr.core.mount_root = (function qsr$core$mount_root(){
 return reagent.core.render.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [qsr.views.main_panel], null),document.getElementById("app"));
 });
 qsr.core.init = (function qsr$core$init(){
-var G__34624_34625 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("qsr.events","initialize-db","qsr.events/initialize-db",-493943915)], null);
-(re_frame.core.dispatch_sync.cljs$core$IFn$_invoke$arity$1 ? re_frame.core.dispatch_sync.cljs$core$IFn$_invoke$arity$1(G__34624_34625) : re_frame.core.dispatch_sync.call(null,G__34624_34625));
+var G__32336_32337 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("qsr.events","initialize-db","qsr.events/initialize-db",-493943915)], null);
+(re_frame.core.dispatch_sync.cljs$core$IFn$_invoke$arity$1 ? re_frame.core.dispatch_sync.cljs$core$IFn$_invoke$arity$1(G__32336_32337) : re_frame.core.dispatch_sync.call(null,G__32336_32337));
 
 qsr.core.dev_setup();
 
