@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"module$package_json.js",
-"lineCount":1,
-"mappings":"AAAAA,cAAA,oBAAA,CAAwC,QAAQ,CAACC,MAAD,CAAQC,OAAR,CAAgBC,MAAhB,CAAuBC,OAAvB,CAAgC,CAChFD,MAAAC,QAAA,CAAgB,CAAC,KAAO,KAAR,CAAc,QAAU,OAAxB,CAAgC,UAAU,CAAA,CAA1C,CAA+C,gBAAkB,CAAC,cAAc,QAAf,CAAjE,CAA0F,aAAe,CAAC,eAAe,QAAhB,CAAyB,qBAAqB,OAA9C,CAAsD,sBAAsB,QAA5E,CAAqF,kBAAkB,OAAvG,CAA+G,KAAO,QAAtH,CAA+H,YAAY,QAA3I,CAAoJ,eAAe,QAAnK,CAA4K,qBAAqB,QAAjM,CAA0M,MAAQ,QAAlN,CAA2N,GAAK,QAAhO,CAAzG,CADgE;",
-"sources":["package.json"],
-"sourcesContent":["shadow$provide[\"module$package_json\"] = function(global,require,module,exports) {\nmodule.exports=({\"name\":\"qsr\",\"version\":\"0.0.1\",\"private\":true,\"devDependencies\":{\"shadow-cljs\":\"2.8.58\"},\"dependencies\":{\"url-template\":\"^2.0.8\",\"react-highlight.js\":\"1.0.7\",\"google-auth-library\":\"^5.2.2\",\"react-flip-move\":\"3.0.1\",\"uuid\":\"^3.3.3\",\"react-dom\":\"16.3.0\",\"highlight.js\":\"9.12.0\",\"create-react-class\":\"15.6.2\",\"react\":\"16.3.0\",\"qs\":\"^6.9.0\"}});\n};"],
-"names":["shadow$provide","global","require","module","exports"]
-}

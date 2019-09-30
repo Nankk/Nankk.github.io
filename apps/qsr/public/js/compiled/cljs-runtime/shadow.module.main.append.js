@@ -1,3 +1,0 @@
-
-qsr.core.init();
-shadow.cljs.devtools.client.browser.module_loaded('main');
