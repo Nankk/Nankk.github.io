@@ -1,0 +1,1 @@
+{"version":3,"sources":["qsr/db.cljs"],"mappings":";;AAEA,AAAA,AAAA,AAAA,AAAA,AAAA,AAAA,AAAA,AAAA,AAAA,AAAA,AAAA,AAAKA","names":["qsr.db/default-db"],"sourcesContent":["(ns qsr.db)\n\n(def default-db\n  {:name \"re-frame\"\n   :items []\n   :selected-item nil\n   :sort-by :sheet-idx\n   :sort-order :ascending})\n\n"]}
