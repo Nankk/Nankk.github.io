@@ -1,2 +1,0 @@
-shadow$provide.module$package_json=function(global,require,module,exports){module.exports={name:"qsr",version:"0.0.1","private":!0,devDependencies:{"shadow-cljs":"2.8.58"},dependencies:{"url-template":"^2.0.8",sortablejs:"^1.10.1","react-highlight.js":"1.0.7","google-auth-library":"^5.2.2","react-flip-move":"3.0.1",uuid:"^3.3.3","react-dom":"16.3.0","highlight.js":"9.12.0","create-react-class":"15.6.2",react:"16.3.0",qs:"^6.9.0"}}}
-//# sourceMappingURL=module$package_json.js.map
