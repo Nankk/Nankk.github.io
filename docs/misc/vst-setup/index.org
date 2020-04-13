@@ -1,0 +1,30 @@
+#+TITLE: 必要なVSTのセットアップ
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+#+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+#+OPTIONS: \n:t ^:{}
+#+REVEAL_HLEVEL: 3
+
+* VST
+Sudio Oneで使用する場合、VSTはデフォルトでスキャンが行われるProgramFiles\Vstpluginsとかに入れるようにする。
+64bitマシンに入れるなら32bit用のもののインストールは不要。
+
+** ベース音源
+Ample Bass P Lite II
+https://www.amplesound.net/en/download.asp
+
+本家ダウンロードは無くなったようで、Reverb.comまたはpluginboutique.comを通してダウンロードする。
+どちらもアカウント作成が必要なようなので適当に捨て垢を作り（今後使用予定があるならちゃんと作る）、ダウンロードへ進む。
+
+** ドラム音源
+MT Power Drum Kit 2
+https://www.powerdrumkit.com/download-file.php?v=MTPDK-2.0.9-VST-64bit-Win-FULL&ver=2.0.9
+
+アクセスするとすぐにダウンロードが始まる。
+ページ開いて出てくるVRヘッドセット云々のアンケートは別に答える必要がないので閉じてOK。
+
+* Git
+プロジェクトの管理に使用する。
