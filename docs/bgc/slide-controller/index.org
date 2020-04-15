@@ -1,0 +1,104 @@
+#+TITLE: スライドコントローラの使い方
+#+AUTHOR: Nankk
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+#+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+#+OPTIONS: \n:t ^:{}
+#+REVEAL_HLEVEL: 3
+
+[[./img/00_title.png]]
+
+VRChat TRPG用会議室のスライドコントローラの使用方法について説明します。
+
+* スライドコントローラ
+TRPG会議室に設置されたスライドパネルに表示する画像を管理するアプリです。
+*[[https://nankk.github.io/apps/qsr/public/][ここ]]* にアクセスして使用します。
+
+2020/4/16現在のバージョンでは以下のことが出来ます。
+
+1. 画像ファイルのアップロード
+2. 画像一覧の表示
+3. 画像の削除
+4. 画像のソート（ファイル名昇順・降順、手動ソート）
+5. スライドパネルに表示する画像の選択
+
+以下ではその使用方法について説明します。
+
+* アップロード
+まずは、手持ちのPCからセッションで使用する画像をアップロードします。
+アプリにアクセスすると最初に画像一覧ページが表示されているので、左上のハンバーガーメニューからアップロード画面に移りましょう。
+
+[[./img/01_upload.gif]]
+
+クラウドのアイコンに画像ファイルをドラッグアンドドロップし、しばらく待てば完了です。
+
+ちなみに、現在のバージョンでは *Browse filesボタンは飾りです* 。
+（本当は動作するはずだったがバグって動かなくなった。何故だ。）
+
+* 画像の削除
+もし間違った画像をアップロードしてしまった場合は画像一覧ページから削除できます。
+
+[[./img/03_delete01.gif]]
+
+✕を押すだけです。
+簡単ですね。
+
+全ての画像を一気に削除したい場合はDelete all itemsボタンをクリックします。
+
+[[./img/04_delete02.gif]]
+
+* 画像のソート
+アップロードした画像は自分の思ったとおりの順番に並んでいないかもしれません。
+セッション中に操作しやすいように並べ替えましょう。
+
+** ファイル名ソート
+
+[[./img/05_sort01.gif]]
+
+#+begin_src
+Sort by [name] in [ascending] order
+#+end_src
+
+の name または ascending のところから希望の並び順を選択すると即座に並べ替えが行われます。
+
+** 手動ソート
+ファイル名を適当に付けていた場合、ファイル名に従ってソートしても思ったような並びにならないかもしれません。
+アイテムをドラッグ（モバイル端末の場合は短くホールドしてからスワイプ）すると並べ替えを行うことができます。
+
+[[./img/06_sort02.gif]]
+
+なお、ドラッグして画面の端まで持っていくとマウスカーソルまたは指がある方向に画面がゆっくりスクロールします。
+
+* 画像の選択
+VRChat会議室内のスライドパネルに投影する画像を選択肢ます。
+選択するには画像をクリックまたはタップします。
+
+[[./img/07_select01.gif]]
+
+アイテムの背景および縁取りが青くなったら選択完了です。
+
+選択した画像は [[https://nankk.net:55551/get-image]] にアクセスして閲覧することができます。
+
+[[./img/08_select02.gif]]
+
+* VRChat会議室内での操作
+ここまでの操作だけでは、スライドパネルへの画像の投影は完了していません。
+前項で選択した画像は、VRChat会議室内に設置されている豆腐状の見た目のボタンを押すことによりスライドパネルに投影されます。
+
+[[./img/09_reflect.png]]
+
+* まとめ
+VRChat会議室内のスライドパネルに手持ちの画像を投影させるためには、
+
+1. *[[https://nankk.github.io/apps/qsr/public/][スライドコントローラアプリ]]* にアクセスして、
+2. 画像をアップロードして、
+3. 自分の好きなように並べ替えて、
+4. 表示させたい画像を選択する。
+
+以上の操作を行います。
+これで画像をスライドパネルに投影する準備が完了するので、実際に投影させる操作はVRChat会議室内の豆腐状のボタンを押すことにより行いましょう。
+
+以上です。
